@@ -64,7 +64,7 @@ img {
   z-index: 1;
 }
 .tarjeta {
-  padding:10px;
+  padding: 10px;
 }
 
 .tarjetas {
@@ -83,3 +83,16 @@ img {
 .tarjetas h2 {
   font-weight: 600;
 }
+
+
+/* MOBILE-VERSION */
+@media (max-width: 576px) {
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .tarjetas {
+    margin-top: 20px;
+  }
+}
+

@@ -7,16 +7,25 @@
   color: #005eb4;
 }
 
-.dropdown-item{
+.dropdown-item {
   color: rgba(0, 0, 0, 0.55);
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: #005eb4;
+  background-color: #fff;
+  color: #005eb4;
+  /* background-color: #005eb4; */
 }
 
 .navbar {
   box-shadow: 0px +4px 5px #e5e5e5;
   background-color: #fff;
+}
+
+/* TABLET-VERSION */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    border: NONE;
+  }
 }
