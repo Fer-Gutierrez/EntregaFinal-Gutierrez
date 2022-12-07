@@ -84,6 +84,95 @@ img {
   font-weight: 600;
 }
 
+/* PAGINA CONTACTO E INGRESO */
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  margin: 2rem auto 0 auto;
+  padding: 1rem 0;
+  max-width: 60rem;
+  background-color: #005eb4;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #262525;
+}
+
+form .grupo {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 3rem;
+  padding: 0.5rem 0;
+}
+
+form label {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+form input,
+form textarea {
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  font-size: 1.4rem;
+  color: #262525;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.form-submit {
+  margin: 0px auto;
+  padding: 0.5rem 0.8rem;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border-color: #262525;
+  color: #005eb4;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  filter: brightness(130%);
+}
+
+.img-ingreso {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 15px;
+  margin: 1rem auto;
+}
+
+#username,
+#password {
+  margin: 1rem auto 0 auto;
+  width: 85%;
+}
+
+#ingresar {
+  margin-top: 1rem;
+}
+
+#ingresar-facebook,
+#ingresar-google {
+  height: 2em;
+  max-width: 18em;
+  padding: auto;
+}
 
 /* MOBILE-VERSION */
 @media (max-width: 576px) {
@@ -95,4 +184,3 @@ img {
     margin-top: 20px;
   }
 }
-

@@ -101,7 +101,41 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container">
+
+        <h1>contáctenos</h1>
+        <h3>
+          Envianos tu mensaje y nos pondremos en contacto a la brevedad
+        </h3>
+
+        <form action="">
+          <div class="grupo">
+            <label for="name">Nombre:</label>
+            <input required type="text" name="name" id="name" placeholder="Tu Nombre" />
+          </div>
+
+          <div class="grupo">
+            <label for="email">Email:</label>
+            <input required type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" />
+          </div>
+
+          <div class="grupo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              required
+              name="mensaje"
+              id="mensaje"
+              rows="3"
+              placeholder="Tu Mensaje"
+            ></textarea>
+          </div>
+
+          <div class="grupo">
+            <button type="submit" class="form-submit">Enviar</button>
+          </div>
+        </form>
+      
+    </main>
 
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"

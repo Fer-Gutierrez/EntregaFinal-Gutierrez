@@ -104,7 +104,51 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container">
+
+      <h1>Ingreso</h1>
+      <img class="img-ingreso" src="../img/Ya2.png" alt="logo" />
+
+      <form action="">
+        <div class="grupo">
+          <input
+            required
+            type="text"
+            placeholder="Nombre de Usuario"
+            name="username"
+            id="username"
+          />
+        </div>
+
+        <div class="grupo">
+          <input
+            required
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="grupo">
+          <button type="submit" id="ingresar" class="form-submit">
+            Ingresar
+          </button>
+        </div>
+
+        <div class="grupo">
+          <button type="button" id="ingresar-facebook" class="form-submit">
+            Ingresar con Facebook
+          </button>
+        </div>
+
+        <div class="grupo">
+          <button type="button" id="ingresar-google" class="form-submit">
+            Ingresar con Google
+          </button>
+        </div>
+      </form>
+    </main>
 
     <footer
     class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"
