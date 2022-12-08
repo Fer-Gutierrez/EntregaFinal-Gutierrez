@@ -20,10 +20,17 @@
       rel="stylesheet"
     />
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- CSS PROPIOS -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/animaciones.css" />
   </head>
   <body>
     <header>
@@ -102,39 +109,47 @@
       </nav>
     </header>
     <main class="container">
+      <h1 class="tracking-in-expand">contáctenos</h1>
+      <h3>Envianos tu mensaje y nos pondremos en contacto a la brevedad</h3>
 
-        <h1>contáctenos</h1>
-        <h3>
-          Envianos tu mensaje y nos pondremos en contacto a la brevedad
-        </h3>
+      <form action="">
+        <div class="grupo">
+          <label for="name">Nombre:</label>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Tu Nombre"
+          />
+        </div>
 
-        <form action="">
-          <div class="grupo">
-            <label for="name">Nombre:</label>
-            <input required type="text" name="name" id="name" placeholder="Tu Nombre" />
-          </div>
+        <div class="grupo">
+          <label for="email">Email:</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ejemplo@ejemplo.com"
+          />
+        </div>
 
-          <div class="grupo">
-            <label for="email">Email:</label>
-            <input required type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" />
-          </div>
+        <div class="grupo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            required
+            name="mensaje"
+            id="mensaje"
+            rows="3"
+            placeholder="Tu Mensaje"
+          ></textarea>
+        </div>
 
-          <div class="grupo">
-            <label for="mensaje">Mensaje:</label>
-            <textarea
-              required
-              name="mensaje"
-              id="mensaje"
-              rows="3"
-              placeholder="Tu Mensaje"
-            ></textarea>
-          </div>
-
-          <div class="grupo">
-            <button type="submit" class="form-submit">Enviar</button>
-          </div>
-        </form>
-      
+        <div class="grupo">
+          <button type="submit" class="form-submit">Enviar</button>
+        </div>
+      </form>
     </main>
 
     <footer

@@ -3,6 +3,10 @@
   height: 25px;
 }
 
-footer small{
+footer small {
   font-size: 0.7rem;
+}
+
+.img-redsocial:hover {
+  filter: brightness(130%);
 }

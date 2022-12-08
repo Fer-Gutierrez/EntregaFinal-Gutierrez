@@ -29,6 +29,7 @@ header {
 
 main {
   grid-area: main;
+  position: relative;
 }
 
 footer {
@@ -82,15 +83,17 @@ a {
 .card-index {
   cursor: pointer;
   transition: transform 0.3s;
+  z-index: 0;
 }
 
 .card-index:hover {
-  transform: scale(1.08);
-  z-index: 1;
+  transform: scale(1.05);
+  z-index: 100;
 }
 
 .tarjeta {
-  padding: 10px;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 .tarjetas {
