@@ -214,6 +214,7 @@ hr {
   border: solid #005eb4 3px;
   border-radius: 3px;
   opacity: 1;
+  background-color: #005eb4;
 }
 
 #tabla-costo td {
