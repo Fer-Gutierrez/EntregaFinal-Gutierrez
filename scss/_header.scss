@@ -4,15 +4,15 @@
 
 /* Sobrescrituras de Boostrap */
 .navbar-nav .nav-link.active {
-  color: #005eb4;
+  color: $primary-color;
 }
 
 .dropdown-item {
   color: rgba(0, 0, 0, 0.55);
 
   &.active, &:active{
-    background-color: #fff;
-  color: #005eb4;
+    background-color: $bgc-theme-light;
+  color: $primary-color;
   }
 }
 
@@ -25,7 +25,7 @@
 
 .navbar {
   box-shadow: 0px +4px 5px #e5e5e5;
-  background-color: #fff;
+  background-color: $bgc-theme-light;
 }
 
 /* TABLET-VERSION */

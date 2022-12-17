@@ -1,3 +1,9 @@
+// Variables
+$bgc-theme-light: #fff;
+$primary-color: #005eb4;
+$text-color-primary: #262525;
+$shadowcolor1-theme-light: #e5e5e5;
+
 @import "estructura";
 @import "header";
 
@@ -41,7 +47,7 @@ a {
 }
 
 .card {
-  box-shadow: 0px 0px 5px #e5e5e5;
+  box-shadow: 0px 0px 5px $shadowcolor1-theme-light;
 }
 
 .card-index {
@@ -96,9 +102,9 @@ form {
   margin: 2rem auto 0 auto;
   padding: 1rem 0;
   max-width: 60rem;
-  background-color: #005eb4;
+  background-color: $primary-color;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px #262525;
+  box-shadow: 0px 0px 5px $text-color-primary;
 
   .grupo {
     display: flex;
@@ -119,7 +125,7 @@ form {
     border-radius: 0.5em;
     padding: 0.3em;
     font-size: 1.4rem;
-    color: #262525;
+    color: $text-color-primary;
   }
 
   textarea {
@@ -134,8 +140,8 @@ form {
   font-weight: 600;
   background-color: #fafafa;
   border-radius: 10px;
-  border-color: #262525;
-  color: #005eb4;
+  border-color: $text-color-primary;
+  color: $primary-color;
   cursor: pointer;
 
   &:hover {
@@ -175,10 +181,10 @@ form {
 }
 
 hr {
-  border: solid #005eb4 3px;
+  border: solid $primary-color 3px;
   border-radius: 3px;
   opacity: 1;
-  background-color: #005eb4;
+  background-color: $primary-color;
 }
 
 #tabla-costo td {
@@ -224,12 +230,12 @@ td:nth-of-type(4) {
     font-weight: 600;
     background-color: #fafafa;
     border-radius: 10px;
-    border-color: #262525;
-    color: #005eb4;
+    border-color: $text-color-primary;
+    color: $primary-color;
 
     &:hover {
-      background-color: #005eb4;
-      border-color: #262525;
+      background-color: $primary-color;
+      border-color: $text-color-primary;
       color: #fafafa;
       filter: brightness(130%);
     }
