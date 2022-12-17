@@ -1,12 +1,13 @@
 .img-redsocial {
   width: 25px;
   height: 25px;
+
+  &:hover {
+    filter: brightness(130%);
+  }
 }
 
 footer small {
   font-size: 0.7rem;
 }
 
-.img-redsocial:hover {
-  filter: brightness(130%);
-}
