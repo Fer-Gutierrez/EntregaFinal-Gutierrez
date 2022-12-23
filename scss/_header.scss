@@ -10,9 +10,10 @@
 .dropdown-item {
   color: rgba(0, 0, 0, 0.55);
 
-  &.active, &:active{
+  &.active,
+  &:active {
     background-color: $bgc-theme-light;
-  color: $primary-color;
+    color: $primary-color;
   }
 }
 
