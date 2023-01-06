@@ -187,6 +187,10 @@ hr {
   background-color: $primary-color;
 }
 
+#tabla-costo {
+  width: 98%;
+}
+
 #tabla-costo td {
   font-size: 1.3rem;
 }
@@ -249,6 +253,7 @@ td:nth-of-type(4) {
 @media (max-width: 576px) {
   .container {
     padding: 0 1.8rem;
+    overflow-x: hidden;
   }
 
   h1 {
