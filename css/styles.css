@@ -31,12 +31,13 @@ footer {
 .textoLogo {
   font-size: 2rem; }
 
-/* Sobrescrituras de Boostrap */
 .navbar-nav .nav-link.active {
   color: #005eb4; }
 
 .dropdown-item {
   color: rgba(0, 0, 0, 0.55); }
+  .dropdown-item:hover {
+    background-color: #fff; }
   .dropdown-item.active, .dropdown-item:active {
     background-color: #fff;
     color: #005eb4; }
@@ -45,10 +46,46 @@ footer {
   box-shadow: 0px +4px 5px #e5e5e5;
   background-color: #fff; }
 
-/* TABLET-VERSION */
+/* TABLET Y MOBILE -VERSION */
 @media (max-width: 991px) {
   .dropdown-menu {
-    border: NONE; } }
+    border: NONE;
+    padding-top: 0 !important; }
+  .dropdown-toggle {
+    padding-bottom: 0; }
+  .dropdown-item:hover,
+  .nav-link:hover {
+    color: #005eb4;
+    opacity: 0.5; } }
+
+/* PC -VERSION */
+@media (min-width: 991px) {
+  .navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #005eb4;
+    opacity: 80%;
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform 0.5s; }
+  .navbar-nav .nav-link:hover::after {
+    transform: scale(1, 1); }
+  .navbar-nav .dropdown-toggle::after {
+    border-top: none; }
+  .dropdown-item::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #005eb4;
+    opacity: 80%;
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform 0.5s; }
+  .dropdown-item:hover::after {
+    transform: scale(1, 1); }
+  .dropdown-item:hover {
+    background-color: #fff; } }
 
 img {
   max-width: 100%;
@@ -83,14 +120,12 @@ a {
   color: inherit;
   --bs-link-hover-color: black; }
 
-.card {
-  box-shadow: 0px 0px 5px #e5e5e5; }
-
 .card-index {
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
   z-index: 0; }
   .card-index:hover {
+    box-shadow: 0px 0px 8px #e5e5e5;
     transform: scale(1.05);
     z-index: 100; }
 
